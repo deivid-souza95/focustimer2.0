@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="running">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <title>Focus Timer 2.0</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="src/main.js" type="module" defer></script>
+
+</head>
+<body>
+  <div class="app">
+    
+    <div class="timers">
+        <section id="timer" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <div id="controls">
+          <button data-action="clickRunning" class="ph-fill ph-play"><span class="sr-only">Play</span></button>
+          <button data-action="reset" class="ph-fill ph-stop"><span class="sr-only">Stop</span></button>
+          <button data-action="increase" class="ph-thin ph-plus"><span class="sr-only">Aumentar 5 minutos</span></button>
+          <button data-action="toDecrease" class="ph-thin ph-minus"><span class="sr-only">Diminuir 5 minutos</span></button>
+        </div>
+      </section>
+    </div>
+
+    <div class="card">
+      <section id="cards" class="flex">
+        <button class="ph-thin ph-tree secondary"><span class="sr-only">Arvore</span></button>
+        <button class="ph-thin ph-cloud-rain secondary"><span class="sr-only">Tempo chuvoso</span></button>
+        <button class="ph-thin ph-storefront secondary"><span class="sr-only">Frente de uma loja</span></button>
+        <button class="ph-thin ph-fire secondary"><span class="sr-only">Fogo</span></button>
+      </section>
+    </div>
+
+  </div>
+</body>
+</html>
